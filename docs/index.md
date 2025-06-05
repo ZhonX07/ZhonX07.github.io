@@ -27,7 +27,7 @@ features:
 
 <div class="home-content">
   <div class="content-section">
-    <h2>👋 欢迎来到我的博客</h2>
+    <h2>👋 Hi there!</h2>
     <p>这里记录了我在开发过程中的学习笔记、教程分享和项目经验。</p>
     <h3>⏱️ 最近更新</h3>
     <ul class="recent-updates">
