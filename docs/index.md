@@ -21,7 +21,7 @@ features:
     details: 详细的 Koishi 机器人框架安装和配置指南
   - title: 技术分享
     details: 分享前端开发、工具使用等技术内容，偶尔也会分享点冲浪时发现的好东西
-  - title: 绝赞更新中！
+  - title: 绝赞更新中
     details: 不定期更新内容，记录学习和开发过程
 ---
 
