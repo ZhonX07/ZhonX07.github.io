@@ -10,7 +10,7 @@ export default defineConfig({
   
   // 添加 favicon 配置
   head: [
-  ['link', { rel: 'icon', href: `${base}favicon.ico` }]
+  ['link', { rel: 'icon', href: `favicon.ico` }]
 ],
 
   
