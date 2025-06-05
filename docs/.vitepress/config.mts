@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
-const base = "/zhonxu-blog/"; 
+const base = "/"; 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base,
@@ -10,8 +10,9 @@ export default defineConfig({
   
   // 添加 favicon 配置
   head: [
-    ['link', { rel: 'icon', href: `${base}favicon.ico` }]
-  ],
+  ['link', { rel: 'icon', href: `${base}favicon.ico` }]
+],
+
   
   // 禁用死链检测
   ignoreDeadLinks: true,
