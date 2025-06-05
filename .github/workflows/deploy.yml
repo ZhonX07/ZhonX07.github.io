@@ -31,16 +31,26 @@ jobs:
         with:
           node-version: 20
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
           version: latest
+          run_install: false
 
       - name: Install dependencies
-        run: pnpm install
+        run: |
+          echo "开始安装依赖..."
+          pnpm install
+          echo "依赖安装完成"
 
-      - name: Build VitePress site
-        run: pnpm run docs:build 
+      - name: Build blog project
+        run: |
+          echo "当前工作目录: ${{ github.workspace }}"
+          echo "开始构建博客项目..."
+          pnpm docs:build
+          echo "构建完成"
+          echo "构建输出目录内容:"
+          ls -la docs/.vitepress/dist
 
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v2
