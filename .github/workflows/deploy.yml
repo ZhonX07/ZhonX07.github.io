@@ -27,30 +27,39 @@ jobs:
   # 构建工作
   build:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [20]
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # 如果未启用 lastUpdated，则不需要
-      # - uses: pnpm/action-setup@v3 # 如果使用 pnpm，请取消此区域注释
-      #   with:
-      #     version: 9
-      # - uses: oven-sh/setup-bun@v1 # 如果使用 Bun，请取消注释
-      - name: Setup Node
-        uses: actions/setup-node@v4
+          fetch-depth: 0
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
         with:
-          node-version: 22
-          cache: npm # 或 pnpm / yarn
-      - name: Setup Pages
-        uses: actions/configure-pages@v4
-      - name: Install dependencies
-        run: npm ci # 或 pnpm install / yarn install / bun install
-      - name: Build with VitePress
-        run: npm run docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          node-version: ${{ matrix.node-version }}
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
         with:
-          path: docs/.vitepress/dist
+          version: latest
+          run_install: true
+
+      - name: Install Dependencies
+        run: |
+          echo "Installing dependencies..."
+          pnpm install
+          echo "Dependencies installed successfully"
+
+      - name: Build Project
+        run: |
+          echo "Building project..."
+          pnpm docs:build
+          echo "Build completed"
+          ls -la docs/.vitepress/dist
 
   # 部署工作
   deploy:
