@@ -57,9 +57,14 @@ jobs:
       - name: Build Project
         run: |
           echo "Building project..."
-          pnpm docs:build
+          pnpm run docs:build
           echo "Build completed"
           ls -la docs/.vitepress/dist
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
   # 部署工作
   deploy:
