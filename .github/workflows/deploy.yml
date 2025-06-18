@@ -49,10 +49,12 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Build VitePress site
-        run: pnpm run docs:build      - name: Upload GitHub Pages artifact
+        run: pnpm run docs:build
+
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .vitepress/dist
+          path: docs/.vitepress/dist
 
   deploy:
     needs: build
