@@ -1,0 +1,13 @@
+/* 整个代码块区域：英文用 JetBrainsMono，中文用 OPPOSans */
+.vp-doc pre code {
+  font-family: 'JetBrainsMono', 'OPPOSans', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 行内代码也统一设置 */
+.vp-doc code {
+  font-family: 'JetBrainsMono', 'OPPOSans', monospace;
+}

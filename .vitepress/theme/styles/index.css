@@ -1,0 +1,50 @@
+@import './custom-block.css';
+@import './blur.css';
+@import './vp-code.css';
+@import './rainbow.css';
+@import './blockquote.css';
+@import './fonts.css';
+
+/* 全局页面中文默认使用 OPPOSans，日文使用 HiraginoKaku */
+html, body {
+  font-family: 'OPPOSans', 'HiraginoKaku', sans-serif;
+}
+
+/* 根据 unicode 范围，粗略指定日文字体 */
+@supports (font-family: "HiraginoKaku") {
+  body {
+    font-family: 'OPPOSans', 'HiraginoKaku', sans-serif;
+  }
+
+  /* 精细控制日文字体（覆盖日文 Unicode 范围） */
+  html :lang(ja),
+  html :lang(ja-JP),
+  [lang="ja"] {
+    font-family: 'HiraginoKaku', 'OPPOSans', sans-serif;
+  }
+}
+
+/* theme/styles/index.css */
+:root {
+  --vp-c-brand: #42b883;
+  --vp-c-brand-light: #42d392;
+  --vp-c-brand-dark: #33a06f;
+  --vp-c-brand-darker: #155f3e;
+}
+
+/* 全局字体设置 */
+:root {
+  --vp-font-family-base: "OPPOSans", "HiraginoKaku", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-mono: "JetBrainsMono", Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/* 设置行内代码字体（非 pre 元素下的 code） */
+:not(pre) > code {
+  font-family: 'JetBrains Mono', 'OPPOSans', 'PingFang SC', 'Microsoft YaHei', 'Source Han Sans CN', monospace !important;
+}
+
+/* 设置代码块字体（pre 元素下的 code） */
+pre > code {
+  font-family: 'JetBrains Mono', 'OPPOSans', 'PingFang SC', 'Microsoft YaHei', 'Source Han Sans CN', monospace !important;
+}
+
+
