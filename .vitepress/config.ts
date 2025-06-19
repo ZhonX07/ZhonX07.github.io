@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress-theme-async/config';
 
 export default defineConfig({
 	lang:'zh-Hans',
-  	appearance: 'false',
+  	appearance: 'force-dark',
 	srcDir: './',
 	themeConfig: {
 		noticeOutdate: { 
