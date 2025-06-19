@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress-theme-async/config';
 
 export default defineConfig({
+  	appearance: 'force-dark',
 	srcDir: './',
 	themeConfig: {
 		noticeOutdate: { 
@@ -11,7 +12,7 @@ export default defineConfig({
 		},
 		banner: {
 			type: 'img',
-			bgurl: '/images/blog/GP.pnG',
+			bgurl: '../public/images/blog/GP.pnG',
 			bannerTitle: '欢迎来到我的博客',
 			bannerText: '以毫不动摇的意志！光啊！',
 			position: 'center',
