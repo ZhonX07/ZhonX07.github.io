@@ -33,5 +33,5 @@ Koishi 窗口左下角的设备信息：点击左下角显示的 Koishi 版本�
  [Apache 官方文档](https://httpd.apache.org/docs/trunk/getting-started.html#logs)已经给出了答案。
 
 
->Troubleshooting any problem without the error log is like driving with your eyes closed.
+>Troubleshooting any problem without the error log is like driving with your eyes closed.  
 >在没有错误日志的情况下诊断任何问题无异于闭眼开车。

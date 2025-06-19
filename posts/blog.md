@@ -1,9 +1,6 @@
 ---
 sticky: 999
 date: 2025-01-01
-banner:
-  type: img
-  bgurl: '../public/images/blog/GP.pnG'
 cover: '/images/blog/GP.pnG'
 author: ZhonXu
 singleColumn: true

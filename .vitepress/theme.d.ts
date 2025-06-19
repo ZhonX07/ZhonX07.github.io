@@ -13,6 +13,146 @@ interface NotFoundConfig {
 	text?: string;
 	path?: string;
 	name?: string;
+}/**
+ * 主题色配置
+ */
+interface ThemeColorConfig {
+	/**
+	 * 开启自定义主题色
+	 */
+	enable?: boolean;
+	/**
+	 * 主色调
+	 */
+	primary?: string | [string, string];
+	/**
+	 * 主色调弱
+	 */
+	primaryWeak?: string | [string, string];
+	/**
+	 * body 字体色
+	 */
+	bodyColor?: string | [string, string];
+	/**
+	 * body 背景色
+	 */
+	bodyBgColor?: string | [string, string];
+	/**
+	 * 主题字体色，
+	 */
+	themeColor?: string | [string, string];
+	/**
+	 * 主题背景色，用于各种卡片背景色
+	 */
+	themeBgColor?: string | [string, string];
+	/**
+	 * 主题背景色-2，用于底部背景区域
+	 */
+	themeBg2Color?: string | [string, string];
+}/**
+ * 固定按钮显示配置 || Fixed button config on the right
+ */
+interface FixedBtnConfig {
+	/**
+	 * 阅读模式按钮
+	 */
+	readmode?: boolean;
+	/**
+	 * 单双栏切换按钮
+	 */
+	aside?: boolean;
+}/**
+ * 页面分页配置 || [index | archives | categorys | tags] page sort paging config
+ */
+interface IndexGeneratorConfig {
+	/**
+	 * 分页大小
+	 */
+	perPage?: number;
+	/**
+	 * 排序方式
+	 */
+	orderBy?: string;
+	/**
+	 * 分页是否生成静态文件
+	 */
+	static?: boolean;
+}/**
+ * 关于页 || About page config
+ */
+interface AboutPageConfig {
+	/**
+	 * 标题
+	 */
+	title?: string;
+	/**
+	 * 个人简单描述
+	 */
+	introduction?: string;
+	/**
+	 * 博客信息
+	 */
+	blog?: string;
+	/**
+	 * 隐私权说明
+	 */
+	privacy?: string;
+}
+/**
+ * 首页中显示的分类卡片
+ */
+interface CategorieCardConfig {
+	/**
+	 * 是否启用
+	 */
+	enable?: boolean;
+	/**
+	 * 需要显示分类数量，默认为 2 个
+	 */
+	len?: number;
+	/**
+	 * 固定显示分类
+	 */
+	list?: string[];
+}
+/**
+ * 网站图标配置 || Configure the icon information of the blog
+ */
+interface FaviconConfig {
+	/**
+	 * logo
+	 */
+	logo?: string;
+	/**
+	 *  dark 下使用
+	 */
+	darkLogo?: string;
+	/**
+	 * 网站图标
+	 */
+	icon16?: string;
+	/**
+	 * 网站图标
+	 */
+	icon32?: string;
+	/**
+	 * iOS 添加到主屏幕使用图标
+	 */
+	appleTouchIcon?: string;
+	/**
+	 * 网站清单配置
+	 */
+	webmanifest?: string;
+	/**
+	 * 是否监听选项卡可见事件
+	 */
+	visibilitychange?: boolean;
+	/**
+	 * 选项卡不可见时显示角标
+	 */
+	hidden?: string;
+	showText?: string;
+	hideText?: string;
 }
 /**
  * 过期提取 || notice outdate

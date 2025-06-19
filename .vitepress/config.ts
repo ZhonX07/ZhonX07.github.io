@@ -1,7 +1,8 @@
 import { defineConfig } from 'vitepress-theme-async/config';
 
 export default defineConfig({
-  	appearance: 'force-dark',
+	lang:'zh-Hans',
+  	appearance: 'false',
 	srcDir: './',
 	themeConfig: {
 		noticeOutdate: { 
@@ -12,7 +13,7 @@ export default defineConfig({
 		},
 		banner: {
 			type: 'img',
-			bgurl: '../public/images/blog/GP.pnG',
+			bgurl: '/images/banner/bannertwo.jpg',
 			bannerTitle: '欢迎来到我的博客',
 			bannerText: '以毫不动摇的意志！光啊！',
 			position: 'center',
@@ -22,11 +23,6 @@ export default defineConfig({
 			typedTextPrefix: "",
 			typedText: ['アリスの誕生日は、みんなに出会えた今日です。先生と初めて会った、まさにその日です。'], 
 			social: [
-				{
-					name: 'vue',
-					url: 'https://cn.vuejs.org/',
-					icon: `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M356.9 64.3H280l-56 88.6-48-88.6H0L224 448 448 64.3h-91.1zm-301.2 32h53.8L224 294.5 338.4 96.3h53.8L224 384.5 55.7 96.3z"/></svg>`,
-				},
 				{
 					name:'Github',
 					url: 'https://github.com/ZhonX07',
@@ -40,7 +36,14 @@ export default defineConfig({
 				}
 			],
 		},
+		categorieCard: { 
+			list: ["vitepress", "Koishi","blog"], 
+			enable: true,
+		},
+
 		user:{
+			firstName:"的博客",
+			lastName:'ZhonX07',
 			avatar:"/avatar/ZhonX07.jpg",
 			name: 'ZhonX07',
 			email:"Creeper000011901@outlook.com",
@@ -54,6 +57,7 @@ export default defineConfig({
 			{ title: 'Home', url: '/' },
 			{ title: 'About', url: '/about' },
 		],
+		
 		links: [
 			{
 				name: 'Vitepress',
@@ -70,15 +74,33 @@ export default defineConfig({
 		],
 		rightside: {
 			readmode: true,
-			aside: true,
+			aside: false,
+		},
+		themeColor: { 
+			enable: true, 
+			primary: ['#7ecbff', '#addfff'], // 爱丽丝淡蓝
+			primaryWeak: ['#73bce6', '#a3d1f0'], // hover 较柔和蓝
+			bodyColor: ['#e6f0fa', '#d0dce9'], // 明亮字体色
+			bodyBgColor: ['#121821', '#1a202b'], // 深色科技蓝背景
+			themeColor: ['#ffe4f0', '#ffccdd'], // 爱丽丝粉点缀
+			themeBgColor: ['#1f2633', '#2a303f'], // 卡片背景
+			themeBg2Color: ['#191f2b', '#202735'], // 底部背景
+		},about: {  
+			title: "勇士啊，光芒与你同在。",  
+			introduction: "高三学生一名，平常会写点基于 `py` 和 `electron` 的小程序 ，偶尔会写点 Koishi 聊天机器人框架的插件", 
+			blog: `<ul class="trm-list"> <li>程序：Vitepress </li> <li>主题：vitepress-theme-async </li> </ul>`, 
+			privacy: "一个部署在 Github Pages 上的静态网页，你觉得它会收集什么隐私信息？", 
+		}, 
+		indexGenerator: {
+			perPage: 6, 
 		},
 		outline: {
 			level: [2, 6],
 		},
 		favicon: {
-			logo: '/favicon.svg',
-			icon16: '/favicon.svg',
-			icon32: '/favicon.svg',
+			logo: '/favicon.ico',
+			icon16: '/favicon.ico',
+			icon32: '/favicon.ico',
 			visibilitychange: true,
 		},
 	},
