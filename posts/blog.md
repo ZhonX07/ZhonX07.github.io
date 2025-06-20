@@ -14,6 +14,10 @@ tags: [vitepress,blog]
 
 # 如何使用 vitepress-theme-async 部署你的博客
 
+:::warning
+还没写完！
+:::
+
 之前有出过一期教大伙怎么用` Vitepress 默认主题 + Github Pages `部署博客的。但vitepress本来就是为文档站而设计，所以默认主题看着也确实不像是能担当博客站的样子，所以如果你足够细心，应该也发现了，我把那篇文章的标题改成了`如何使用 Vitepress + Github Pages 部署你的项目文档`。  
 
 那就有小伙伴要问了：**有没有基于 Vitepress 的适合博客站的主题呢？**  
