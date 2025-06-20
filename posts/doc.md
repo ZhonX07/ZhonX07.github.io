@@ -139,7 +139,7 @@ npx vitepress init
 :::
 
 如：
-```git
+```bash
 $ git config --global user.name "你的用户名"       <--记得改！别直接复制粘贴！
 $ git config --global user.email "你的邮箱地址"   <- ┚
 ```
@@ -196,7 +196,7 @@ $ git config --global user.email "你的邮箱地址"   <- ┚
 
 按下 `Ctrl+J` 打开 `“终端”` , 输入：
 
-```git
+```bash
 git init
 git branch -M main
 ```
@@ -219,7 +219,7 @@ error: failed to push some refs to 'https://github.com/<你的用户名>/<你的
 
 现在点击 `SSH` ，复制右边的形如
 
-```link
+```txt
 git@github.com:<你的用户名>/<你的仓库名>.git
 ```
 
@@ -409,7 +409,7 @@ git push origin main
 ![ACtions 完成部署](../public/images/doc/finished.png)
 
 这个时候尝试访问
-```url
+```txt
 https://你的Github用户名.github.io/你的仓库名/
 ```
 应该能够正常显示。
