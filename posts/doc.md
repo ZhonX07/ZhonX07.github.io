@@ -9,6 +9,10 @@ tags: [vitepress,doc]
 
 # 如何使用 Vitepress + Github Pages 部署你的项目文档
 
+:::warning
+还没写完！
+:::
+
 ## 必要前置条件
 
 安装了 [Node](https://nodejs.org/zh-cn) ，并拥有 Github 账号 
