@@ -8,6 +8,7 @@ interface UserConfig {
 	describe?: string;
 	ruleText?: string;
 }
+
 interface NotFoundConfig {
 	title?: string;
 	text?: string;

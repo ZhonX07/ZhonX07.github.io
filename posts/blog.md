@@ -4,8 +4,9 @@ sticky: 999
 date: 2025-06-20 12:00
 cover: '/images/blog/configmts.png'
 author: ZhonXu
+layout: "home"
 singleColumn: true
-categories: Vitepress
+categories: Vitepress建站
 tags: [vitepress,blog]
 ---
 

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress-theme-async/config';
 
 export default defineConfig({
+	
 	lang:'zh-Hans',
   	appearance: 'force-dark',
 	srcDir: './',
@@ -11,7 +12,8 @@ export default defineConfig({
 			limitDay: 120,
 			position: 'top',
 		},
-	title:"ZhonXu 的小站",
+		globalComponents: ['TrmCardCategorie'],
+		title:"ZhonXu 的小站",
 		banner: {
 			type: 'img',
 			bgurl: '/images/banner/bannertwo.jpg',
@@ -43,7 +45,7 @@ export default defineConfig({
 		},
 		categorieCard: {  
 			enable: true,
-			list: ["vitepress", "Koishi","blog"],
+			list: ["vitepress建站"],
 			len:3,
 		},
 
