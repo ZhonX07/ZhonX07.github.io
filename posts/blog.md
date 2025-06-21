@@ -55,7 +55,7 @@ tags: [vitepress,blog]
 
 如果你在`中国大陆地区`使用npm，那么下载包时可能会非常慢。因此，我们需要配置大陆镜像源（推荐使用淘宝镜像）。
 
-在安装完 node 以后，按下 `Win+R` 组合键，输入`wt`，进入终端后输入`node -v`，你应该看到这样的返回结果：
+在安装完 node 以后，按下 `Win+X` 组合键，选择`终端`，进入终端后输入`node -v`，你应该看到这样的返回结果：
 ```shell
 C:\Users\xxxx>node -v
 v22.16.0
@@ -159,7 +159,7 @@ git config --global user.email "你的邮箱地址"   <- ┚
 
 ### 安装 async
 
-按下`Win+R`输入`wt`并敲击回车，在终端中输入以下命令：
+按下`Win+X`选择`终端`，在终端中输入以下命令：
 ```bash
 mkdir D:\dev && cd D:\dev   #新建一个文件夹，这里以 D:\dev 为例
 ```
