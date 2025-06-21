@@ -161,8 +161,7 @@ git config --global user.email "你的邮箱地址"   <- ┚
 
 按下`Win+R`输入`wt`并敲击回车，在终端中输入以下命令：
 ```bash
-REM 新建一个文件夹，这里以 D:\dev 为例
-mkdir D:\dev && cd D:\dev  
+mkdir D:\dev && cd D:\dev   #新建一个文件夹，这里以 D:\dev 为例
 ```
 
 此时你将被跳转至`D:\dev`目录。
