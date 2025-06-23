@@ -174,7 +174,7 @@ npm create async-theme@latest my-first-blog
 ```
 
 ```bash [yarn]
-yarn create async-theme@latest my-first-blog
+yarn create async-theme my-first-blog
 ```
 
 ```bash [pnpm]
