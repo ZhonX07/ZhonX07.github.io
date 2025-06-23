@@ -24,7 +24,7 @@ export default defineConfig({
 		},
 		sidebar: {
 			typedTextPrefix: "",
-			typedText: ['アリスの誕生日は、みんなに出会えた今日です。先生と初めて会った、まさにその日です。'], 
+			typedText: ['以毫不动摇的意志，光啊！'], 
 			social: [
 				{
 					name:'Github',
