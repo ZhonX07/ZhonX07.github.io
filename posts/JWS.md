@@ -1,5 +1,4 @@
 ---
-sticky: 999
 date: 2025-10-14
 cover: '/images/doc/GP.pnG'
 author: ZhonXu
